@@ -234,7 +234,7 @@ byte AX12::readPacket () {
     while (bcount < 13) {       // 13 es el largo máximo que puede tener un packet
         ulCounter = 0;
         while ((bcount + offset) == ax_rx_Pointer) {
-            if (ulCounter++ > 1200L) {                   // acá hay 2 errores claros, 1) faltan #defines, 2) el timeout no es relativo al baudrate
+            if (ulCounter++ > 2000L) {                   // acá hay 2 errores claros, 1) faltan #defines, 2) el timeout no es relativo al baudrate
                 timeout = 1;
                 break;
             }
