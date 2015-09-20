@@ -1,0 +1,8 @@
+arreglar lo siguiente:
+
+- defines para los mensajes de error
+- elegir el USART
+- incluir motores Rs485 y motores como el MX28T que tiene otros márgenes
+- utilizar herencia
+- buffered TX
+- ojo con los volatile de más de 1 byte
